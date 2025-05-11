@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forhtWebsit</title>
+    <link rel="stylesheet" href="forth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <nav> 
+        <ul class="sidebar">
+            <li class="in"><a href="#" onclick="hideSidebar()"><i class="fa-solid fa-xmark red"></i></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Product</a></li>
+        </ul>
+        
+        <ul class="">
+            <li class="logo"><a href="#" ><img src="img/alexone-logo-removebg.png" class="logo" alt=""></a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">contact</a></li>
+            <li class="hideOnMobile"><a href="#">shop</a></li>
+            <li class="hideOnMobile"><a href="#">Blog</a></li>
+            <li class="hideOnMobile"><a href="#">product</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars "></i></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
+
+    </script>
+</body>
+</html>
